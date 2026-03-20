@@ -89,7 +89,7 @@ export default function Home() {
   const stats = calcStats(players, jornadas, payments)
   const totalPendiente = stats.reduce((s, p) => s + p.owes, 0)
 
-  const rankingByUltimos = [...stats].sort((a, b) => b.ultimos - a.ultimos || b.penultimos - a.penultimos)
+  const rankingByUltimos = [...stats].sort((a, b) => b.totalDebt - a.totalDebt)
   const rankingByPrimeros = [...stats].sort((a, b) => b.primeros - a.primeros)
 
   return (
