@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect, useCallback } from 'react'
-import { DEFAULT_PLAYERS, Jornada, calcStats, ULTIMO_COST, PENULTIMO_COST } from '@/lib/data'
+import { DEFAULT_PLAYERS, INITIAL_JORNADAS, INITIAL_PAYMENTS, Jornada, calcStats, ULTIMO_COST, PENULTIMO_COST } from '@/lib/data'
 import styles from './page.module.css'
 
 type Tab = 'jornadas' | 'ranking' | 'deudas'
@@ -31,6 +31,9 @@ export default function Home() {
     if (saved) {
       if (saved.jornadas) setJornadas(saved.jornadas)
       if (saved.payments) setPayments(saved.payments)
+    } else {
+      setJornadas(INITIAL_JORNADAS)
+      setPayments(INITIAL_PAYMENTS)
     }
   }, [])
 

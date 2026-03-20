@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="#0d6634"/>
+  <!-- Football shape -->
+  <circle cx="256" cy="256" r="170" fill="#f5f5f5" stroke="#1a1a1a" stroke-width="8"/>
+  <!-- Pentagon center -->
+  <polygon points="256,156 310,196 289,260 223,260 202,196" fill="#1a1a1a"/>
+  <!-- Surrounding pentagons (simplified as lines) -->
+  <polygon points="256,156 310,196 356,160 340,100 205,100 172,160 202,196" fill="none" stroke="#1a1a1a" stroke-width="7"/>
+  <polygon points="289,260 340,260 370,312 344,368 256,390 168,368 142,312 172,260 223,260" fill="none" stroke="#1a1a1a" stroke-width="7"/>
+  <polygon points="310,196 356,160 406,190 400,248 370,268 340,260" fill="none" stroke="#1a1a1a" stroke-width="7"/>
+  <polygon points="202,196 172,260 142,250 136,190 172,160" fill="none" stroke="#1a1a1a" stroke-width="7"/>
+  <!-- Gold ring -->
+  <circle cx="256" cy="256" r="170" fill="none" stroke="#f0b429" stroke-width="10"/>
+  <!-- Outer decorative ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="rgba(240,180,41,0.3)" stroke-width="6"/>
+</svg>
